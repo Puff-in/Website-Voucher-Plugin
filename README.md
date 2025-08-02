@@ -26,7 +26,7 @@ Once the plugin is running, you can update a user's Shop Balance with a simple c
     -   Run the `:update_permissions` command in your client to apply the changes.
 
 2.  **Command Execution:**
-    -   To use the command, simply type `:addvoucher <code> <amount>` in your client.
+    -   To use the command, simply type `:shopvoucher <code> <amount>` in your client.
     -   `<code>` is the code a user will use to redeem the voucher with.
     -   `<amount>` is the amount of currency the user will receive in their shop balance from redeeming the code.
 
