@@ -56,7 +56,7 @@ public class WebsiteVoucher extends HabboPlugin implements EventListener {
         Emulator.getTexts().register("commands.description.cmd_shopvoucher", ":shopvoucher <code> <amount>");
         Emulator.getTexts().register("commands.error.cmd_shopvoucher.missing_parameters", "Usage: :shopvoucher <code> <amount>");
         Emulator.getTexts().register("commands.error.cmd_shopvoucher.invalid_amount", "The amount you use must be a valid number");
-        Emulator.getTexts().register("commands.error.cmd_shopvoucher.invalid_code_length", "Voucher code must be between 1 and 3 numbers long");
+        Emulator.getTexts().register("commands.error.cmd_shopvoucher.invalid_code_format", "Voucher code must be at least 3 characters (letters, numbers, or special characters allowed, no spaces)");
         Emulator.getTexts().register("commands.error.cmd_shopvoucher.invalid_amount_range", "Amount must be between 1 and 500");
         Emulator.getTexts().register("commands.error.cmd_shopvoucher.positive_amount", "The amount you use must be a positive number");
         Emulator.getTexts().register("commands.error.cmd_shopvoucher.code_exists", "A voucher with code '%code%' already exists");

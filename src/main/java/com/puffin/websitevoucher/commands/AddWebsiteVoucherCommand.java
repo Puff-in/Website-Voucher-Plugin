@@ -22,11 +22,16 @@ public class AddWebsiteVoucherCommand extends Command {
             return true;
         }
 
-        String voucherCode = strings[1];
+        String voucherCode = strings[1].trim();
         int amount;
 
-        if (voucherCode.trim().length() < 1 || voucherCode.trim().length() > 3) {
-            gameClient.getHabbo().whisper(Emulator.getTexts().getValue("commands.error.cmd_shopvoucher.invalid_code_length"));
+        if (voucherCode.length() < 3) {
+            gameClient.getHabbo().whisper(Emulator.getTexts().getValue("commands.error.cmd_shopvoucher.invalid_code_format"));
+            return true;
+        }
+
+        if (!voucherCode.matches("\\S{3,}")) {
+            gameClient.getHabbo().whisper(Emulator.getTexts().getValue("commands.error.cmd_shopvoucher.invalid_code_format"));
             return true;
         }
 
